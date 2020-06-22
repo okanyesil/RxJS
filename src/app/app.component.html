@@ -1,0 +1,13 @@
+<input type="text" [formControl]="search">
+
+<select [formControl]="selectCurrency">
+  <option *ngFor="let item of currency" [value]="item"> {{item}} </option>
+</select>
+<hr>
+<div style="width: 500px; height: 500px; background: antiquewhite; margin: 10px; padding: 10px;float: left">
+  <app-a></app-a>
+</div>
+<div style="width: 500px; height: 500px; background: antiquewhite; margin: 10px; padding: 10px; float: left">
+  <app-b></app-b>
+</div>
+<router-outlet></router-outlet>
